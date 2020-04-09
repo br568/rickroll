@@ -9,6 +9,12 @@
         body {
             overflow-x: hidden;
         }
+        
+        .button {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+        }
 
         .video-container {
             position: absolute;
@@ -35,7 +41,7 @@
 </head>
 
 <body>
-    <button onclick="rickroll()">Click to see...</button>
+    <button class="button" onclick="rickroll()">Click to see...</button>
     <div class="video-container" id="container"><video id="rickroll" class="video-container video" src="rickroll.mp4"></video></div>
     <script>
         cont = document.getElementById("container")
