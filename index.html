@@ -1,76 +1,17 @@
 <!doctype html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="The Internet's favorite website.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/ico" sizes="32x32"> 
-    <style>
-        body {
-            overflow-x: hidden;
-            background-image: url("circle.png");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center; 
-            background-size: 300px 300px;
-        }
-        
-        .toptext {
-            text-align: right;
-            text-size: 8px;
-        }
-        
-        .button {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .video-container {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .video-container video {
-            min-width: 100%;
-            min-height: 100%;
-
-            width: auto;
-            height: auto;
-
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    </style>
 </head>
-
 <body>
-    <button class="button" onclick="rickroll()">Click to see...</button>
-    <div class="video-container" id="container"><video id="rickroll" class="video-container video" src="rickroll.mp4"></video></div>
-    <script>
-        cont = document.getElementById("container")
-        cont.style.display = "none"
-
-        function rickroll() {
-            cont.style.display = "contents"
-            document.getElementById("rickroll").play()
-            document.title = "You\'ve been Rick Rolled!";
-            alert("You thought you were safe from being rick rolled?")
-        }
-    </script>
-    <script>
-        window.onbeforeunload = function() {
-            return true;
-        };
-    </script>
+<h3>vidd.org</h3>
+<h1>Windows XP Games Library</h1>
+<p>Download old Windows XP titles such as Pinball, Solitaire and much more! All files are taken from a fresh Windows XP installation, so there is no risk to you or your PC.</p>
+<ul>
+<li><a href="Pinball.zip">3D Pinball</a></li>
+<li><a href="Spider.zip">Spider Solitaire</a></li>
+<li><a href="Solitaire.zip">Solitaire</a></li>
+<li><a href="Minesweeper.zip">Minesweeper</a></li>
+<li><strong>More coming soon!</strong></li>
+</ul>
 </body>
-
 </html>
